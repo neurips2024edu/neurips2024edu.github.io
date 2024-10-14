@@ -26,10 +26,61 @@
     <link href="./files_new/css(3)" rel="stylesheet" type="text/css">
     <link href="./files_new/css2" rel="stylesheet" type="text/css">
 
+    <!-- ... (existing head content) ... -->
+    <style>
+        /* Updated styles for the navigation bar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+        .navbar-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar a {
+            display: inline-block;
+            color: #333;
+            text-align: center;
+            padding: 16px 16px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #007bff;
+        }
+
+        /* Adjust the body to account for the fixed navbar */
+        body {
+            padding-top: 50px;
+        }
+    </style>
+
+
 </head>
 
 <body id="page-top" class="index">
 
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#page-top">Home</a>
+            <a href="#introduction">Introduction</a>
+            <a href="#speaker">Speakers</a>
+            <a href="#program">Schedule</a>
+            <a href="#call">Call for Papers</a>
+            <a href="#organization">Organizers</a>
+        </div>
+    </nav>
 
     <!-- Header -->
     <header>
@@ -242,9 +293,10 @@
                 Assessment of student learning outcomes are expected to be valid, reliable, accurate, and efficient. Technology has played a significant role in shaping and enhancing educational assessment practices. As the landscape of artificial intelligence (AI) evolves rapidly, AI technology is currently revolutionizing the test development process, particularly in terms of assessment design, item development, implementation, and psychometric analysis. This presentation will first demonstrate the transformative impact of AI technology on educational assessment by presenting successful use cases of AI in test development such as automated scoring, cheating detection, and process data analysis. Next, the presentation will explore additional possibilities and opportunities that AI can bring to enhance educational assessment practices. This includes the use of generative AI for item generation and item parameter prediction modeling. Finally, the presentation will address the challenges in the applications of AI in educational assessment. It will highlight the potential bias and fairness issues, as well as the ethical considerations for the responsible use of AI in large-scale test development. This presentation will emphasize the importance of thoughtful implementation and continuous evaluation to ensure the validity, reliability, and fairness of AI-powered assessment systems. 
             </p>
 
-
             <p class="large text-muted">
-                <b> Keynote Talk 3: TBA </b>
+                <b> Keynote Talk 3: Building AI Applications for Large Scale Assessment: A Case Study in Writing Feedback</b>, <i>Sue</i>
+                <br>
+                Building AI applications for large scale assessment requires substantial efforts not just from data science, but also psychometrics, hand-scoring, item development, UI/UX, and machine learning engineering to ensure products can support trustworthy AI (e.g., NIST AI Risk Management Framework) in ways that are also cost effective.  This presentation will discuss the key elements and steps our team took when designing and building a writing feedback tool called “Write On with Cambi!” that walks students through reviewing their essay using structured feedback and highlighting organizational and grammatical elements in the essay to emphasize areas for review. The presentation will cover the how the overall purpose for product drove the design, structure, and human labeling of the annotations, the AI modeling using fine-tuned lightweight open source models, the evaluation of the human and AI annotations including bias evaluations, as well as the mapping of elements to structured feedback, the UI/UX, and finally efficacy studies conducted with students and teachers.  
             </p>
 
 
@@ -403,6 +455,14 @@
                                     <li>Event: <b>Dec 15, 2024</b> </li>
                                 </ul>
 
+
+                                <p class="large text-muted"><b>Camera Ready:</b></p>
+                                <ul class="large text-muted" style="float:left; width: 100%">
+                                    You must format your camera-ready paper with the FM-Assess LaTeX camera-ready template.
+                                    <a href="LaTeX.zip" download>Download Formatting Instructions for FM-EduAssess</a>
+
+                                </ul>
+
                                 <p class="large text-muted">
                                     <i>
                                         <b>Note:</b> The workshop is non-archival, so you can have a concurrent submission
@@ -436,10 +496,11 @@
 
 
 
-<<section id="organization">
+<section id="organization">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
+
                 <h2 class="section-heading">Workshop Organizers</h2>
             </div>
         </div>
@@ -504,6 +565,156 @@
                 </div>
             </div>
         </div>
+
+
+<h3 class="section-heading" style="text-align: center;">Program Committee Member</h3>
+
+<div class="row">
+    <div class="col-sm-3">
+        <div class="team-member">
+            <h4>Saed Rezayi</h4>
+            <p class="text-muted">NBME</p>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="team-member">
+            <h4>Peter Organisciak</h4>
+            <p class="text-muted">University of Denver</p>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="team-member">
+            <h4>Jiasen Lu</h4>
+            <p class="text-muted">Allen Institute for Artificial Intelligence</p>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="team-member">
+            <h4>Sheng Li</h4>
+            <p class="text-muted">University of Virginia, Charlottesville</p>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-3">
+        <div class="team-member">
+            <h4>Dongliang Guo</h4>
+            <p class="text-muted">University of Virginia, Charlottesville</p>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="team-member">
+            <h4>Okan Bulut</h4>
+            <p class="text-muted">University of Alberta</p>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="team-member">
+            <h4>Wanjing Anya Ma</h4>
+            <p class="text-muted">Stanford University</p>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="team-member">
+            <h4>Xuansheng Wu</h4>
+            <p class="text-muted">University of Georgia</p>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-3">
+        <div class="team-member">
+            <h4>Hariram Veeramani</h4>
+            <p class="text-muted">University of California, Los Angeles</p>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="team-member">
+            <h4>Wei Ai</h4>
+            <p class="text-muted">University of Maryland, College Park</p>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="team-member">
+            <h4>Jiawei Xiong</h4>
+            <p class="text-muted">University of Georgia</p>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="team-member">
+            <h4>Daiqing Qi</h4>
+            <p class="text-muted">University of Virginia, Charlottesville</p>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-3">
+        <div class="team-member">
+            <h4>Shumin Jing</h4>
+            <p class="text-muted">University of California, Santa Cruz</p>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="team-member">
+            <h4>Jiangang Hao</h4>
+            <p class="text-muted">Educational Testing Service</p>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="team-member">
+            <h4>Deborah J Harris</h4>
+            <p class="text-muted"> University of Iowa </p>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="team-member">
+            <h4>Matthias Vondavier</h4>
+            <p class="text-muted"> Boston College </p>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-3">
+        <div class="team-member">
+            <h4>Zhongmin Cui</h4>
+            <p class="text-muted">CFA Institute</p>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="team-member">
+            <h4>Scott Crossley</h4>
+            <p class="text-muted">Vanderbilt University</p>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="team-member">
+            <h4>Guangya Wan</h4>
+            <p class="text-muted">University of Virginia, Charlottesville</p>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="team-member">
+            <h4>Reiji Suzuki</h4>
+            <p class="text-muted">Nagoya University</p>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-3">
+        <div class="team-member">
+            <h4>Xiaoming Zhai</h4>
+            <p class="text-muted">University of Georgia</p>
+        </div>
+    </div>
+</div>
+
+
+
     </div>
 </section>
 
